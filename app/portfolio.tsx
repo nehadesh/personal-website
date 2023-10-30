@@ -33,14 +33,21 @@ const rowStyle: CSSProperties = {
     justifyContent: 'flex-start',
     flexWrap: 'wrap',
     flex: '100%',
-    marginTop: '10vh',
-    marginBottom: '10vh',
 }
 
 const personalImageStyle: CSSProperties = { 
     width: 'auto', 
     height: 'auto',
     minWidth: '200px',
+};
+
+const logoImageStyle: CSSProperties = {
+    width: 'auto', 
+    height: 'auto',
+    marginLeft: 0,
+    minWidth: '5vw',
+    maxWidth: '5vw',
+    opacity: '50%',
 };
 
 const nameStyle: CSSProperties = {
@@ -96,19 +103,37 @@ export default class Portfolio extends Component {
                         <div style={workSummaryBoxStyle}>
                             <h5 style={workTitleStyle}>Software Engineer</h5>
                         </div>
+                        <div style={rowStyle}>
+                            <div style={{...columnStyle, flex: '10%'}}>
+                                <a href='https://github.com/nehadesh' target='_blank'>
+                                    <Image 
+                                        src="/github-mark-white.svg"
+                                        alt="Github Logo"
+                                        width={40}
+                                        height={40}
+                                        priority
+                                        style={logoImageStyle}
+                                    />  
+                                </a>      
+                            </div>
+                            <div style={{...columnStyle, flex: '10%'}}>
+                                <a href='https://www.linkedin.com/in/nehadesh/' target='_blank'>
+                                    <Image 
+                                        src="/linkedin.svg"
+                                        alt="Linkedin Logo"
+                                        width={50}
+                                        height={50}
+                                        priority
+                                        style={{...logoImageStyle, maxWidth: '5.5vw'}}
+                                    />  
+                                </a>  
+                            </div>                           
+                        </div>
                     </div>
                     <div style={{...columnStyle, flex: '60%'}}>
                         <h1 style={nameStyle}>Neha Deshpande</h1>
                         <div className='line-1 anim-typewriter' style={taglineStyle}>
                             I am a Developer
-                        </div>
-                        <div style={rowStyle}>
-                            <div style={columnStyle}>
-                                <div style={workSummaryBoxStyle}>helloooooo</div>
-                            </div>
-                            <div style={columnStyle}>
-                                <div style={workSummaryBoxStyle}>worlddddddddddddddd</div>
-                            </div>
                         </div>
                     </div>
                 </div>
