@@ -26,17 +26,6 @@
     rgb(var(--background-start-rgb));
 }
 
-.navigation {
-  position: fixed;
-  left: 20%;
-  top: 20%;
-  width: 100%;
-  color: #fff;
-  font-size: 40px;
-  font-weight: 800;
-  z-index: 999;
-}
-
 .content {
   position: absolute;
   left: 50%;
@@ -50,15 +39,22 @@
 }
 
 .main {
-  background: linear-gradient(to bottom, #1D0B2E, #7D7585);
-  width: 100%;
+  background: #1D0B2E linear-gradient(to bottom, #1D0B2E, #7D7585);
+  width: 100vw;
   height: 100vh;
+  background-position: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex: 1;
+  display: flex;
+  flex-wrap: 'wrap';
 }
 
 .circles-area {
-  background: linear-gradient(to bottom, #1D0B2E, #7D7585);
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .circles {
@@ -201,16 +197,13 @@
 }
 
 .line-1{
-  position: absolute;
-  top: 50%;  
-  width: 16em;
+  width: 8em;
   margin: 0 auto;
   border-right: 2px solid rgba(255,255,255,.75);
-  font-size: 180%;
+  font-size: '8wv';
   text-align: flex-start;
   white-space: nowrap;
   overflow: hidden;
-  transform: translateY(-50%);    
 }
 
 /* Animation */
@@ -218,10 +211,12 @@
 animation: typewriter 4s steps(44) 1s 1 normal both,
            blinkTextCursor 500ms steps(44) infinite normal;
 }
+
 @keyframes typewriter{
 from{width: 0;}
-to{width: 10em;}
+to{width: 8em;}
 }
+
 @keyframes blinkTextCursor{
 from{border-right-color: rgba(255,255,255,.75);}
 to{border-right-color: transparent;}

@@ -8,14 +8,12 @@ import { CSSProperties, Component, HTMLAttributes } from 'react';
 const space_grotesk_font = Space_Grotesk({weight: '400', subsets: ['latin']}); 
 
 const mainContentStyle: CSSProperties = {
-    width: '100%', 
     display: 'flex', 
     flexDirection: 'row', 
     fontFamily: space_grotesk_font.style.fontFamily, 
     flexWrap: 'wrap',
     alignItems: 'center',
     alignContent: 'center',
-    marginTop: '40px',
 };
 
 const columnStyle: CSSProperties = {
@@ -35,12 +33,8 @@ const rowStyle: CSSProperties = {
     justifyContent: 'flex-start',
     flexWrap: 'wrap',
     flex: '100%',
-}
-
-const headerStyle: CSSProperties = {
-    display: 'flex', 
-    flexDirection: 'row', 
-    alignItems: 'center', 
+    marginTop: '10vh',
+    marginBottom: '10vh',
 }
 
 const personalImageStyle: CSSProperties = { 
@@ -56,47 +50,65 @@ const nameStyle: CSSProperties = {
     marginTop: '6vh',
 };
 
+const taglineStyle: CSSProperties = {
+    fontFamily: space_grotesk_font.style.fontFamily, 
+    color: BrandColors.RoseQuartz,
+    fontSize: '4vw',
+    marginLeft: '0vw',
+};
+
+const workSummaryBoxStyle: CSSProperties = {
+    backgroundColor: BrandColors.DarkestPurple, 
+    borderRadius: 8, 
+    padding: '10px 20px 10px 20px',
+    color: BrandColors.RoseQuartz,
+    width: '100%',
+};
+
+const workTitleStyle: CSSProperties = {
+    fontSize: '3vw',
+    textAlign: 'center',
+};
+
+const workSummarySubtext: CSSProperties = {
+    fontSize: '1.5vw',
+    textAlign: 'left',
+    marginLeft: '1.5vw'
+};
+
 
 export default class Portfolio extends Component {
     render() {
         return (
             <div style={mainContentStyle}>
-                {/* <div style={{display: 'flex'}}>
-                    <div style={{flex: '40%'}}>
-                        <Image
-                            src="/neha_deshpande.png"
-                            alt="Neha Deshpande"
-                            width={500}
-                            height={100}
-                            priority
-                            style={personalImageStyle}
-                        />
-                    </div>
-                    <div style={{flex: '60%'}}>
-                        <div className='heading1'>
-                        <div className='line-1 anim-typewriter'>
-                            <h1 style={nameStyle}>Neha Deshpande</h1>
-                        </div>
-                    </div>
-                    </div>
-                </div> */}
-                
                 <div style={rowStyle}>
                     <div style={{...columnStyle, flex: '40%'}}>
+                        <div>
                         <Image
-                            src="/neha_deshpande.png"
+                            src="/neha_deshpande_resized.png"
                             alt="Neha Deshpande"
                             width={500}
                             height={100}
                             priority
                             style={personalImageStyle}
                         />
-                        <div style={{backgroundColor: BrandColors.LightIndigo, borderRadius: 4}}>I am a developer</div>
+                        </div>
+                        <div style={workSummaryBoxStyle}>
+                            <h5 style={workTitleStyle}>Software Engineer</h5>
+                        </div>
                     </div>
                     <div style={{...columnStyle, flex: '60%'}}>
                         <h1 style={nameStyle}>Neha Deshpande</h1>
-                        <div className='line-1 anim-typewriter'>
+                        <div className='line-1 anim-typewriter' style={taglineStyle}>
                             I am a Developer
+                        </div>
+                        <div style={rowStyle}>
+                            <div style={columnStyle}>
+                                <div style={workSummaryBoxStyle}>helloooooo</div>
+                            </div>
+                            <div style={columnStyle}>
+                                <div style={workSummaryBoxStyle}>worlddddddddddddddd</div>
+                            </div>
                         </div>
                     </div>
                 </div>
