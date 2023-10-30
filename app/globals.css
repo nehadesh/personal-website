@@ -30,19 +30,21 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
   transform: translate(-50%, -50%);
-  font-size: 40px;
-  font-weight: 800;
   z-index: 999;
+  overflow: scroll;
 }
 
 .main {
   background: #1D0B2E linear-gradient(to bottom, #1D0B2E, #7D7585);
   width: 100vw;
   height: 100vh;
-  background-position: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -50,6 +52,7 @@
   flex: 1;
   display: flex;
   flex-wrap: 'wrap';
+  position: relative;
 }
 
 .circles-area {
