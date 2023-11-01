@@ -151,13 +151,13 @@ export default class Portfolio extends Component {
                             I am a Developer
                         </h2>
                         <p style={workSummarySubtext}>
-                            Hi! I'm a full-stack software engineer with a passion 
+                            Hi! I am a full-stack software engineer with a passion 
                             for building products that make a difference. 
                         </p>
                         <p style={workSummarySubtext}>
                             My most recent role at Convoy gave me 2+ years of 
                             industry experience at a large startup across the 
-                            full stack. I'm currently looking for new opportunities
+                            full stack. I am currently looking for new opportunities
                             where I can use my skills to make a positive impact on the world.
                         </p>
                         <div style={rowStyle}>
