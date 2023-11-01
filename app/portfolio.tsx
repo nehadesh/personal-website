@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Space_Grotesk } from 'next/font/google';
 import { BrandColors } from './Colors';
 import { CSSProperties, Component, HTMLAttributes } from 'react';
+import Link from 'next/link';
 
 const space_grotesk_font = Space_Grotesk({weight: '400', subsets: ['latin']}); 
 
@@ -80,7 +81,9 @@ const workTitleStyle: CSSProperties = {
 const workSummarySubtext: CSSProperties = {
     fontSize: '1.5vw',
     textAlign: 'left',
-    marginLeft: '1.5vw'
+    marginTop: '1.5vh',
+    marginRight: '1.5vw',
+    color: BrandColors.RoseQuartz,
 };
 
 
@@ -89,7 +92,7 @@ export default class Portfolio extends Component {
         return (
             <div style={mainContentStyle}>
                 <div style={rowStyle}>
-                    <div style={{...columnStyle, flex: '40%'}}>
+                    <div style={{...columnStyle, flex: '30%'}}>
                         <div>
                         <Image
                             src="/neha_deshpande_resized.png"
@@ -105,7 +108,7 @@ export default class Portfolio extends Component {
                         </div>
                         <div style={rowStyle}>
                             <div style={{...columnStyle, flex: '10%'}}>
-                                <a href='https://github.com/nehadesh' target='_blank'>
+                                <Link href='https://github.com/nehadesh' target='_blank'>
                                     <Image 
                                         src="/github-mark-white.svg"
                                         alt="Github Logo"
@@ -113,14 +116,26 @@ export default class Portfolio extends Component {
                                         height={40}
                                         priority
                                         style={logoImageStyle}
-                                    />  
-                                </a>      
+                                    />
+                                </Link>     
                             </div>
                             <div style={{...columnStyle, flex: '10%'}}>
-                                <a href='https://www.linkedin.com/in/nehadesh/' target='_blank'>
+                                <Link href='https://www.linkedin.com/in/nehadesh/' target='_blank'>
                                     <Image 
                                         src="/linkedin.svg"
                                         alt="Linkedin Logo"
+                                        width={50}
+                                        height={50}
+                                        priority
+                                        style={{...logoImageStyle, maxWidth: '5.5vw'}}
+                                    />  
+                                </Link>  
+                            </div>   
+                            <div style={{...columnStyle, flex: '10%'}}>
+                                <a href='mailto:neha.n.deshpande@gmail.com'>
+                                    <Image 
+                                        src="/email.png"
+                                        alt="Email"
                                         width={50}
                                         height={50}
                                         priority
@@ -130,10 +145,34 @@ export default class Portfolio extends Component {
                             </div>                           
                         </div>
                     </div>
-                    <div style={{...columnStyle, flex: '60%'}}>
+                    <div style={{...columnStyle, flex: '70%'}}>
                         <h1 style={nameStyle}>Neha Deshpande</h1>
-                        <div className='line-1 anim-typewriter' style={taglineStyle}>
+                        <h2 className='line-1 anim-typewriter' style={taglineStyle}>
                             I am a Developer
+                        </h2>
+                        <p style={workSummarySubtext}>
+                            Hi! I'm a full-stack software engineer with a passion 
+                            for building products that make a difference. 
+                        </p>
+                        <p style={workSummarySubtext}>
+                            My most recent role at Convoy gave me 2+ years of 
+                            industry experience at a large startup across the 
+                            full stack. I'm currently looking for new opportunities
+                            where I can use my skills to make a positive impact on the world.
+                        </p>
+                        <div style={rowStyle}>
+                            <div style={{...columnStyle, flex: '50%'}}>
+                                <h3 style={{...workTitleStyle, marginTop: '5vh'}}>Skills</h3>
+                                <p style={workSummarySubtext}>
+                                    <b>Languages:</b> Javascript, Typescript, Python, Java, C++, C, SQL
+                                </p>
+                                <p style={workSummarySubtext}>
+                                    <b>Frameworks:</b> React, Redux, Node.js, Express, Flask, Django, Spring
+                                </p>
+                                <p style={workSummarySubtext}>
+                                    <b>Tools:</b> Git, Docker, Kubernetes, AWS, GCP, Jenkins, CircleCI, Terraform, Postman
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
