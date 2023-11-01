@@ -1,15 +1,15 @@
 export enum BrandColors {
     TimberWolf = '#DADBD3ff',
     FrenchGray = '#AEBFC8ff',
+    PistaGreen = '#A8A985ff',
     Gray = '#758081ff',
-    DesertSand = '#E6B298ff',
     WalnutBrown = '#564B3Aff',
     RichBlack = '#011320ff',
     TimberWolfLite = '#DADBD3ff',
-    Champagne = '#F6E2C9ff',
     RoseQuartz = '#A6A2AEff',
-    YellowGreen = '#D0D1ABff',
-    DarkBlueGreen = '#00313Cff',
-    LightIndigo = '#7D9BC1ff',
+    LightIndigo = '#7D9BC1ff',    
+    DarkerIndigo = '#6B7899ff',
+    DarkestIndigo = '#2B3553ff',
+    DarkestPurple = '#31283Aff',
     ChocolateBrown = '#31261Dff'
 }
