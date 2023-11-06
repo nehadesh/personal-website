@@ -2,223 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 29, 11, 46;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-.body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      rgb(var(--background-start-rgb)),
-      rgb(var(--background-end-rgb), 0.35)
-    )
-    rgb(var(--background-start-rgb));
-}
-
-.content {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 100%;
-  width: 100%;
-  margin-left: 2vw;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-  overflow: auto;
-}
-
-.main {
-  background: #1D0B2E linear-gradient(to bottom, #1D0B2E, #7D7585);
-  width: 100vw;
-  height: 100vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  flex: 1;
-  display: flex;
-  flex-wrap: 'wrap';
-  position: relative;
-  overflow: hidden;
-}
-
-.circles-area {
-  width: 100%;
-  height: 100%;
-}
-
-.circles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.circles div {
-  position: absolute;
-  display: block;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  /* background: rgba(var(--background-end-rgb), 0.2); */
-  top: -150px;
-  animation: animate 25s linear infinite;
-}
-
-.circles div:nth-child(1) {
-  left: 25%;
-  width: 80px;
-  height: 80px;
-  font-size: 80px;
-  color: white;
-  opacity: 20%;
-  animation-delay: 0s;
-}
-
-.circles div:nth-child(2) {
-  left: 10%;
-  width: 40px;
-  height: 40px;
-  font-size: 40px;
-  color: white;
-  opacity: 20%;
-  animation-delay: 2s;
-  animation-duration: 12s;
-}
-
-.circles div:nth-child(3) {
-  left: 70%;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  color: white;
-  opacity: 20%;
-  animation-delay: 4s;
-}
-
-.circles div:nth-child(4) {
-  left: 40%;
-  width: 60px;
-  height: 60px;
-  font-size: 60px;
-  color: white;
-  opacity: 20%;
-  animation-delay: 0s;
-  animation-duration: 18s;
-}
-
-.circles div:nth-child(5) {
-  left: 65%;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  color: white;
-  opacity: 20%;
-  animation-delay: 0s;
-}
-
-.circles div:nth-child(6) {
-  left: 75%;
-  width: 80px;
-  height: 80px;
-  font-size: 80px;
-  color: white;
-  opacity: 20%;
-  animation-delay: 3s;
-}
-
-.circles div:nth-child(7) {
-  left: 35%;
-  width: 100px;
-  height: 100px;
-  font-size: 100px;
-  color: white;
-  opacity: 20%;
-  animation-delay: 7s;
-}
-
-.circles div:nth-child(8) {
-  left: 50%;
-  width: 25px;
-  height: 25px;
-  font-size: 25px;
-  color: white;
-  opacity: 20%;
-  animation-delay: 15s;
-  animation-duration: 45s;
-}
-
-.circles div:nth-child(9) {
-  left: 20%;
-  width: 15px;
-  height: 15px;
-  font-size: 15px;
-  color: white;
-  opacity: 20%;
-  animation-delay: 2s;
-  animation-duration: 35s;
-}
-
-.circles div:nth-child(10) {
-  left: 85%;
-  width: 100px;
-  height: 100px;
-  font-size: 100px;
-  color: white;
-  opacity: 20%;
-  animation-delay: 0s;
-  animation-duration: 20s;
-}
-
-
-@keyframes animate {
-  0% {
-    opacity: 1;
-    border-radius: 0;
-    transform: translateY(0) rotate(0deg);
-  }
-  100% {
-    opacity: 0;
-    border-radius: 50%;
-    transform: translateY(1000px) rotate(720deg);  
-  }
-}
-
-.line-1{
+.line-1 {
   width: 8em;
   margin: 0 auto;
-  border-right: 2px solid rgba(255,255,255,.75);
-  font-size: '8wv';
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: "8wv";
   text-align: flex-start;
   white-space: nowrap;
   overflow: hidden;
 }
 
 /* Animation */
-.anim-typewriter{
-animation: typewriter 4s steps(44) 1s 1 normal both,
-           blinkTextCursor 500ms steps(44) infinite normal;
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+  animation-delay: 2s;
 }
 
-@keyframes typewriter{
-from{width: 0;}
-to{width: 8em;}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 8em;
+  }
 }
 
-@keyframes blinkTextCursor{
-from{border-right-color: rgba(255,255,255,.75);}
-to{border-right-color: transparent;}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }

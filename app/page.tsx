@@ -1,47 +1,9 @@
-import Image from 'next/image'
-import Portfolio from './portfolio'
-import { SlStar } from 'react-icons/sl';
+import Intro from "@/components/intro";
 
 export default function Home() {
   return (
-    <main className="main">
-      <div className="content">
-        <Portfolio/>
-      </div>
-      <div className="circles-area">
-        <div className='circles'>       
-              <div>
-                <SlStar style={{color: 'white', opacity: '25%'}}/>
-              </div>
-              <div>
-                <SlStar style={{color: 'white', opacity: '25%'}}/>
-              </div>
-              <div>
-                <SlStar style={{color: 'white', opacity: '25%'}}/>
-              </div>
-              <div>
-                <SlStar style={{ color: 'white', opacity: '25%'}}/>
-              </div>
-              <div>
-                <SlStar style={{color: 'white', opacity: '25%'}}/>
-              </div>
-              <div>
-                <SlStar style={{color: 'white', opacity: '25%'}}/>
-              </div>
-              <div>
-                <SlStar style={{color: 'white', opacity: '25%'}}/>
-              </div>
-              <div>
-                <SlStar style={{ color: 'white', opacity: '25%'}}/>
-              </div>
-              <div>
-                <SlStar style={{color: 'white', opacity: '25%'}}/>
-              </div>
-              <div>
-                <SlStar style={{color: 'white', opacity: '25%'}}/>
-              </div>
-          </div>
-      </div>
+    <main className="flex flex-col items-center px-4">
+      <Intro />
     </main>
-  )
+  );
 }
