@@ -36,3 +36,7 @@
     border-right-color: transparent;
   }
 }
+
+html {
+  --line-color: #312e81;
+}

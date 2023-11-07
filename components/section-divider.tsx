@@ -4,22 +4,23 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export default function SectionDivider() {
+export default function SectionDivider({
+  image,
+  width,
+  height,
+}: {
+  image: string;
+  width: number;
+  height: number;
+}) {
   return (
     <div
       className="flex flex-col justify-center 
-    align-center mt-24 mb-8"
+    align-center mt-28 mb-4"
     >
-      <motion.div
-        className="bg-gray-400 h-20 w-1 
-    rounded-full hidden sm:block bg-opacity-50"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.125 }}
-      ></motion.div>
       <div
         className="relative translate-y-[-1.5rem]
-      translate-x-[-1rem] hover:rotate-12 hover:scale-110
+      translate-x-[-1rem] hover:scale-110
       transition"
       >
         <motion.span
@@ -33,10 +34,10 @@ export default function SectionDivider() {
           }}
         >
           <Image
-            src="/hanging-astronaut.png"
-            alt="Astronaut Hanging"
-            width={100}
-            height={100}
+            src={`/${image}.png`}
+            alt={`${image}`}
+            width={width}
+            height={height}
             priority
             quality={95}
           />
