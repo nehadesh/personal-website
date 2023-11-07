@@ -1,20 +1,26 @@
 "use client";
+
 import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
+  const { ref } = useSectionInView("About");
+
   return (
     <motion.section
+      ref={ref}
       className="mb-28 max-w-[45rem] text-center 
-        leading-8 sm:mb-40 text-slate-800"
+        leading-8 sm:mb-40 text-slate-800 scroll-mt-[18rem]"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
+      id="about"
     >
       <SectionHeading>About me</SectionHeading>
 
       <p className="mb-3 text-justify">
-        I graduated with a 🎓 B.S./M.S. in{" "}
+        I graduated with a B.S./M.S. in{" "}
         <span className="font-medium">Computer Science 💻</span> (specializing
         in Machine Learning) from{" "}
         <span className="font-medium">Georgia Tech 🐝</span>. I then moved to{" "}
@@ -32,7 +38,7 @@ export default function About() {
           Convoy's unfortunate demise 💀
         </a>
         . My passion for programming and creating amazing products is still very
-        much <span className="font-medium">alive 🔥</span>.{" "}
+        much <span className="font-medium">alive</span>.{" "}
         <span className="italic">My favorite part of programming</span> is
         solving <span className="font-medium">challenging problems 🧩</span>. I
         am a{" "}
@@ -42,14 +48,14 @@ export default function About() {
       </p>
 
       <p className="text-justify">
-        <span className="italic">When I'm not coding</span>, I enjoy 🎨 graphic
-        design, music 🎵, and hiking with my dog 🐶 outdoors. I am also
-        passionate about <span className="font-medium">sustainability 💚</span>.
-        I'm dedicated to making conscious choices that{" "}
+        When I'm not coding, I enjoy graphic design, music, and hiking with my
+        dog 🐶 outdoors. I am also passionate about{" "}
+        <span className="font-medium">sustainability 💚</span>. I'm dedicated to
+        making conscious choices that{" "}
         <span className="font-medium">benefit our planet 🌎</span>. I love to
         learn and add on more hobbies to my list: Bharatanatyam (Indian
-        classical dance), Carnatic music, Digital Art, Sewing, Crocheting,
-        Painting, Reading.
+        classical dance), Carnatic music, Digital Art, Sewing, Crocheting, and
+        Painting.
       </p>
     </motion.section>
   );
