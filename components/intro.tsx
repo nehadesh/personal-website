@@ -100,7 +100,7 @@ export default function Intro() {
               , and an{" "}
             </span>
             <span className="text-2xl font-sans text-center text-indigo-900 font-medium">
-              eye for design
+              eye for great design
             </span>
             <span className="text-xl font-sans text-center text-slate-800">
               . I have a passion for problem-solving and building{" "}

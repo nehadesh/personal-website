@@ -9,8 +9,8 @@ export default function Skills() {
   const { ref } = useSectionInView("Skills");
   return (
     <section
-      className="mb-28 max-w-[53rem] text-slate-800 
-    scroll-mt-[21rem] text-center sm:mb-40"
+      className="max-w-[53rem] text-slate-800 
+    scroll-mt-[21rem] text-center"
       id="skills"
       ref={ref}
     >

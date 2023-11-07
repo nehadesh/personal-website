@@ -19,8 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-indigo-100 text-slate-50 relative 
-        h-[5000px] pt-28 sm:pt-36`}
+        className={`${inter.className} bg-indigo-100 text-slate-50 relative pt-28 sm:pt-36`}
       >
         <ActiveSectionContextProvider>
           <Header />
