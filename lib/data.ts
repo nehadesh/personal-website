@@ -57,7 +57,7 @@ export const experiencesData = [
     date: "May 2019 - Aug 2019",
   },
   {
-    title: "Software Engineer Intern @ Convoy",
+    title: "Software Engineer @ Convoy",
     location: "Remote",
     description:
       "I worked on the Data/ ML platform team to develop a dashboard for our internal A/B testing platform. This improved experiment analysis for data scientists. I finished with time to spare so I also added a Slack webhook to alert scientists of changes made to their experiments.",
@@ -146,10 +146,19 @@ export const recsData = [
     paragraphs: [
       "Neha was simply a force of nature when it came to both demonstrating team leadership and delivering some incredibly complex code for the core product of the project. Demonstrating her strong leadership skills she quickly coalesced the team around the various development efforts. Despite not having first hand knowledge or experience with many of the technologies or concepts involved in the project, she fearlessly led the team ultimately delivering an incredibly successful project.",
       "Neha was one of a very select group of candidates to join a special internship program in the office of the Chief Technology Officer. This program focused on the successful delivery of a specific set of technologies to be used in our production environments over a ten week period. In addition to the technological challenges of the assignment, the program also focused on leadership, driving both accountability and responsibility for the delivery of the program in the hands of the interns themselves. ",
-      "I strongly recommend Neha to anyone considering her as a member of their team.",
     ],
     imageName: "michael.jpg",
     linkedIn: "https://www.linkedin.com/in/mjmanos/",
+  },
+  {
+    author: "Mikaela Blackler",
+    title: "Principal PM @ Convoy",
+    relation: "Product Manager for projects I worked on",
+    paragraphs: [
+      "I was a PM working with Neha at Convoy. First, she writes the most beautiful/comprehensive docs you've ever seen. Second, she is thoughtful and iterative, making sure she fully understands the business problem to make sure she's building the best solution. Third, she is an amazing team player - both in always being a positive energy and also in terms of being very supportive/helpful to everyone else on the team. Lastly, I'll say she was one of the nicest/kindest/smartest people I ever worked with. You want her on your team.",
+    ],
+    imageName: "mikaela.jpg",
+    linkedIn: "https://www.linkedin.com/in/mikaela-blackler-5970b77/",
   },
 ];
 

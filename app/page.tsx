@@ -1,4 +1,5 @@
 import About from "@/components/about";
+import Contact from "@/components/contact";
 import Experience from "@/components/experience";
 import Intro from "@/components/intro";
 import Recommendations from "@/components/recommendations";
@@ -21,6 +22,8 @@ export default function Home() {
       <Skills />
       <SectionDivider image={"astronaut-experience"} width={200} height={200} />
       <Experience />
+      <SectionDivider image={"astronaut-contact"} width={200} height={200} />
+      <Contact />
     </main>
   );
 }

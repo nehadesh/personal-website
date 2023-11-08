@@ -7,9 +7,11 @@ import Link from "next/link";
 import { BsDownload, BsLinkedin } from "react-icons/bs";
 import { FaEnvelopeSquare, FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -133,6 +135,10 @@ export default function Intro() {
           shadow-sm shadow-indigo-200 outline-none
           focus:scale-110 hover:scale-110 hover:bg-slate-800
           hover:bg-opacity-80 active:scale-105 transition"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me{" "}
           <FaEnvelopeSquare
