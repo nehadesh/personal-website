@@ -22,8 +22,8 @@ export default function Home() {
       <Skills />
       <SectionDivider image={"astronaut-experience"} width={200} height={200} />
       <Experience />
-      <SectionDivider image={"astronaut-contact"} width={200} height={200} />
-      <Contact />
+      {/* <SectionDivider image={"astronaut-contact"} width={200} height={200} />
+      <Contact /> */}
     </main>
   );
 }
