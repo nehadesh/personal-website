@@ -4,8 +4,14 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsDownload, BsLinkedin } from "react-icons/bs";
-import { FaEnvelopeSquare, FaGithubSquare } from "react-icons/fa";
+import {
+  BsBodyText,
+  BsClipboard2Data,
+  BsClipboard2PulseFill,
+  BsDownload,
+  BsLinkedin,
+} from "react-icons/bs";
+import { FaDochub, FaEnvelopeSquare, FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -153,11 +159,11 @@ export default function Intro() {
           shadow-sm shadow-slate-300 shadow-opacity-60 outline-none
           focus:scale-110 hover:scale-110 hover:bg-indigo-400
           hover:bg-opacity-60 active:scale-105 transition cursor-pointer"
-          href="/Neha_Deshpande_Resume_2023_SWE.pdf"
-          download
+          href="https://drive.google.com/file/d/1_Wu39EU2_V_QodyyL79wnbeqVWbYZZz_/view?usp=sharing"
+          target="_blank"
         >
-          Download CV{" "}
-          <BsDownload className="opacity-80 group-hover:animate-bounce" />
+          View CV{" "}
+          <BsClipboard2PulseFill className="opacity-80 group-hover:animate-bounce" />
         </a>
 
         <a
