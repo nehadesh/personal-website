@@ -8,6 +8,7 @@ import { useState } from "react";
 import clsx from "clsx";
 import { FaQuoteLeft } from "react-icons/fa";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Recommendations() {
   const { ref } = useSectionInView("Recs", 0.5);
@@ -15,10 +16,12 @@ export default function Recommendations() {
   const [isShown, setIsShown] = useState(recsData.map((_rec) => false));
 
   return (
-    <section
+    <motion.section
       className="mb-28 text-center sm:mb-0 text-slate-800 max-w-[53rem] scroll-mt-[18rem]"
       id="recs"
       ref={ref}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
     >
       <SectionHeading>Recommendations</SectionHeading>
       <div className="flex flex-row flex-wrap align-center justify-center gap-4">
@@ -89,6 +92,6 @@ export default function Recommendations() {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

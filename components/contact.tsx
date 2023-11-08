@@ -28,11 +28,11 @@ export default function Contact() {
         Please contact me directly at{" "}
         <a className="underline" href="mailto:neha.n.deshpande@gmail.com">
           neha.n.deshpande@gmail.com
-        </a>{" "}
-        or through this form.
+        </a>
+        . I look forward to hearing from you!
       </p>
 
-      <form
+      {/* <form
         className="mt-10 flex flex-col text-slate-800"
         action={async (formData) => {
           await sendEmail(formData);
@@ -65,7 +65,7 @@ export default function Contact() {
            group-hover:translate-x-1 group-hover:-translate-y-1"
           />{" "}
         </button>
-      </form>
+      </form> */}
     </motion.section>
   );
 }

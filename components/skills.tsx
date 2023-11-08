@@ -4,15 +4,17 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-
+import { motion } from "framer-motion";
 export default function Skills() {
   const { ref } = useSectionInView("Skills");
   return (
-    <section
+    <motion.section
       className="max-w-[53rem] text-slate-800 
     scroll-mt-[21rem] text-center"
       id="skills"
       ref={ref}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
     >
       <SectionHeading>My skills</SectionHeading>
       <ul
@@ -29,6 +31,6 @@ export default function Skills() {
           </li>
         ))}
       </ul>
-    </section>
+    </motion.section>
   );
 }

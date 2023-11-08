@@ -9,14 +9,17 @@ import "react-vertical-timeline-component/style.min.css";
 import SectionHeading from "./section-heading";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience", 0.25);
   return (
-    <section
+    <motion.section
       id="experience"
       ref={ref}
-      className="scroll-mt-[18rem] text-slate-800 text-center max-w-[53rem] justify-center"
+      className="scroll-mt-[18rem] text-slate-800 text-center max-w-[53rem] justify-center mb-28"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
     >
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline className="text-start" lineColor="">
@@ -47,6 +50,6 @@ export default function Experience() {
           </React.Fragment>
         ))}
       </VerticalTimeline>
-    </section>
+    </motion.section>
   );
 }
