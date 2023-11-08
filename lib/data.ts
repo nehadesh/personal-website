@@ -57,7 +57,7 @@ export const experiencesData = [
     date: "May 2019 - Aug 2019",
   },
   {
-    title: "Software Engineer @ Convoy",
+    title: "Software Engineer Intern @ Convoy",
     location: "Remote",
     description:
       "I worked on the Data/ ML platform team to develop a dashboard for our internal A/B testing platform. This improved experiment analysis for data scientists. I finished with time to spare so I also added a Slack webhook to alert scientists of changes made to their experiments.",
@@ -73,7 +73,7 @@ export const experiencesData = [
     date: "May 2021 - Aug 2021",
   },
   {
-    title: "Software Engineer Intern II @ Convoy",
+    title: "Software Engineer II @ Convoy",
     location: "Seattle, WA",
     description:
       "After graduating with my masters, I started as an entry-level Software Engineer at Convoy - shipping full-stack web and React Native features in the mobile app. I was promoted within a year to Software Engineer II. During my time at Convoy, I launched a trailer return location selection feature which brought in $50k in weekly revenue. I also worked on several other features that contributed to reduced empty miles, saved engineering hours, and reduced costs for Convoy. I led several projects and organized team social events.",
