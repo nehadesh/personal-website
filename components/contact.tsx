@@ -7,12 +7,12 @@ import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmail";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact");
+  //   const { ref } = useSectionInView("Contact");
 
   return (
     <motion.section
       id="contact"
-      ref={ref}
+      //   ref={ref}
       className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center justify-center scroll-mt-[18rem]"
       initial={{ opacity: 0 }}
       whileInView={{
