@@ -11,8 +11,8 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center 
-        leading-8 sm:mb-40 text-slate-800 scroll-mt-[18rem]"
+      className="max-w-[45rem] text-center 
+        leading-8 text-slate-800 scroll-mt-[18rem]"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       id="about"
@@ -21,37 +21,45 @@ export default function About() {
 
       <p className="mb-3 text-justify">
         I graduated with a B.S./M.S. in{" "}
-        <span className="font-medium">Computer Science 💻</span> (specializing
-        in Machine Learning) from{" "}
-        <span className="font-medium">Georgia Tech 🐝</span>. I then moved to{" "}
-        <span className="font-medium">Seattle</span> to join an exciting
+        <span className="font-medium">Computer Science 💻</span> specializing in
+        Machine Learning from{" "}
+        <span className="font-medium">Georgia Tech 🐝</span> in{" "}
+        <span className="font-medium">Georgia Tech 🐝</span>. With a return
+        offer from my 2020 internship in hand, I joined an exciting
         sustainable-trucking startup called{" "}
-        <span className="font-medium">Convoy</span> as a Software Engineer. I
-        loved my job. I delivered several high-value,{" "}
-        <span className="font-medium">🥞 full-stack</span> features in my time
-        there before{" "}
+        <span className="font-medium">Convoy Inc</span> full-time in Jan 2022. I
+        was entrusted with the delivery of several high-value,{" "}
+        <span className="font-medium">🥞 full-stack</span> features from the
+        get-go and I built significant, and impactful product features for 2
+        years before my team was cut in{" "}
         <a
           href="https://www.geekwire.com/2023/convoy-collapse-read-ceos-memo-detailing-sudden-shutdown-of-seattle-trucking-startup/"
           target="_blank"
           className="underline"
         >
-          Convoy's unfortunate demise 💀
+          Convoy's sellout to Flexport in November 2023💀
         </a>
-        . My passion for programming and creating amazing products is still very
-        much <span className="font-medium">alive</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is
-        solving <span className="font-medium">challenging problems 🧩</span>. I
-        am a{" "}
-        <span className="font-medium">motivated, driven, and versatile</span>{" "}
-        software engineer, and I am looking for new opportunities where I can
-        use my skills.
+        .
       </p>
 
-      <p className="text-justify">
+      <p className="mb-3 text-justify">
+        I am <span className="font-medium">passionate and driven</span> about
+        building amazing tech products.{" "}
+        <span className="italic font-medium">I love continuous learning</span>{" "}
+        and
+        <span className="font-medium">solving challenging problems 🧩</span>. I
+        am a{" "}
+        <span className="font-medium">motivated, driven, and versatile</span>{" "}
+        motivated, versatile and creative software engineer, and I am looking
+        for a challenging opportunity at a company where I can continue to
+        deliver outstanding results while honing my skills.
+      </p>
+
+      <p className="mb-3 text-justify">
         When I'm not coding, I enjoy graphic design, music, and hiking with my
-        dog 🐶 outdoors. I am also passionate about{" "}
-        <span className="font-medium">sustainability 💚</span>. I'm dedicated to
-        making conscious choices that{" "}
+        dog 🐶 outdoors. I am also dedicated to furthering{" "}
+        <span className="font-medium">sustainability 💚</span> and making
+        conscious choices that{" "}
         <span className="font-medium">benefit our planet 🌎</span>. I love to
         learn and add on more hobbies to my list: Bharatanatyam (Indian
         classical dance), Carnatic music, Digital Art, Sewing, Crocheting, and
