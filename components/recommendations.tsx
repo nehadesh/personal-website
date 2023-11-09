@@ -30,7 +30,7 @@ export default function Recommendations() {
             key={index}
             className={clsx(
               "bg-[#eef2ff] bg-opacity-80 border shadow-sm shadow-slate-500 rounded-xl px-5 py-3 max-h-[35rem] max-w-[25rem]",
-              { "max-h-max, max-w-[30rem]": isShown[index] }
+              { "max-h-max h-auto max-w-[30rem]": isShown[index] }
             )}
           >
             <div className="flex justify-start gap-3 mt-2">
@@ -79,7 +79,7 @@ export default function Recommendations() {
             {rec.paragraphs.length > 1 && !isShown[index] && (
               <div
                 className={clsx(
-                  "flex mt-4 underline background-indigo-800 text-left cursor-pointer",
+                  "flex mt-4 underline background-indigo-800 text-left cursor-pointer mb-4",
                   { "text-opacity-0": isShown[index] }
                 )}
                 onClick={() =>

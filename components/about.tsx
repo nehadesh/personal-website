@@ -24,8 +24,8 @@ export default function About() {
         <span className="font-medium">Computer Science 💻</span> specializing in
         Machine Learning from{" "}
         <span className="font-medium">Georgia Tech 🐝</span> in{" "}
-        <span className="font-medium">Georgia Tech 🐝</span>. With a return
-        offer from my 2020 internship in hand, I joined an exciting
+        <span className="font-medium">December 2021</span>. With a return offer
+        from my 2020 internship in hand, I joined an exciting
         sustainable-trucking startup called{" "}
         <span className="font-medium">Convoy Inc</span> full-time in Jan 2022. I
         was entrusted with the delivery of several high-value,{" "}
@@ -46,13 +46,12 @@ export default function About() {
         I am <span className="font-medium">passionate and driven</span> about
         building amazing tech products.{" "}
         <span className="italic font-medium">I love continuous learning</span>{" "}
-        and
-        <span className="font-medium">solving challenging problems 🧩</span>. I
-        am a{" "}
-        <span className="font-medium">motivated, driven, and versatile</span>{" "}
-        motivated, versatile and creative software engineer, and I am looking
-        for a challenging opportunity at a company where I can continue to
-        deliver outstanding results while honing my skills.
+        and <span className="font-medium">solving challenging problems 🧩</span>
+        . I am a{" "}
+        <span className="font-medium">motivated, versatile and creative</span>{" "}
+        software engineer, and I am looking for a challenging opportunity at a
+        company where I can continue to deliver outstanding results while honing
+        my skills.
       </p>
 
       <p className="mb-3 text-justify">

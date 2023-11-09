@@ -13,7 +13,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center justify-center scroll-mt-[18rem]"
+      className="mb-60 sm:mb-80 w-[min(100%,38rem)] text-center justify-center scroll-mt-[18rem]"
       initial={{ opacity: 0 }}
       whileInView={{
         opacity: 1,
@@ -29,8 +29,9 @@ export default function Contact() {
         <a className="underline" href="mailto:neha.n.deshpande@gmail.com">
           neha.n.deshpande@gmail.com
         </a>
-        . I look forward to hearing from you!
+        .
       </p>
+      <p className="text-slate-700">I look forward to hearing from you!</p>
 
       {/* <form
         className="mt-10 flex flex-col text-slate-800"
