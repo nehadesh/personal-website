@@ -140,6 +140,16 @@ export const recsData = [
     linkedIn: "https://www.linkedin.com/in/aidan-b-sullivan/",
   },
   {
+    author: "Mikaela Blackler",
+    title: "Principal PM @ Convoy",
+    relation: "Product Manager for projects I worked on",
+    paragraphs: [
+      "I was a PM working with Neha at Convoy. First, she writes the most beautiful/comprehensive docs you've ever seen. Second, she is thoughtful and iterative, making sure she fully understands the business problem to make sure she's building the best solution. Third, she is an amazing team player - both in always being a positive energy and also in terms of being very supportive/helpful to everyone else on the team. Lastly, I'll say she was one of the nicest/kindest/smartest people I ever worked with. You want her on your team.",
+    ],
+    imageName: "mikaela.jpg",
+    linkedIn: "https://www.linkedin.com/in/mikaela-blackler-5970b77/",
+  },
+  {
     author: "Michael Manos",
     title: "CTO @ First Data (now Fiserv)",
     relation: "Internship Manager",
@@ -149,16 +159,6 @@ export const recsData = [
     ],
     imageName: "michael.jpg",
     linkedIn: "https://www.linkedin.com/in/mjmanos/",
-  },
-  {
-    author: "Mikaela Blackler",
-    title: "Principal PM @ Convoy",
-    relation: "Product Manager for projects I worked on",
-    paragraphs: [
-      "I was a PM working with Neha at Convoy. First, she writes the most beautiful/comprehensive docs you've ever seen. Second, she is thoughtful and iterative, making sure she fully understands the business problem to make sure she's building the best solution. Third, she is an amazing team player - both in always being a positive energy and also in terms of being very supportive/helpful to everyone else on the team. Lastly, I'll say she was one of the nicest/kindest/smartest people I ever worked with. You want her on your team.",
-    ],
-    imageName: "mikaela.jpg",
-    linkedIn: "https://www.linkedin.com/in/mikaela-blackler-5970b77/",
   },
 ];
 

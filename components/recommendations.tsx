@@ -17,7 +17,7 @@ export default function Recommendations() {
 
   return (
     <motion.section
-      className="mb-28 text-center sm:mb-0 text-slate-800 max-w-[53rem] scroll-mt-[18rem]"
+      className="mb-28 text-center sm:mb-0 text-slate-800 max-w-[80rem] scroll-mt-[18rem]"
       id="recs"
       ref={ref}
       initial={{ opacity: 0, y: 100 }}
@@ -29,8 +29,8 @@ export default function Recommendations() {
           <div
             key={index}
             className={clsx(
-              "bg-[#eef2ff] bg-opacity-80 border shadow-sm shadow-slate-500 rounded-xl px-5 py-3 max-h-[35rem] max-w-[25rem]",
-              { "max-h-max h-auto max-w-[30rem]": isShown[index] }
+              "bg-[#eef2ff] bg-opacity-80 border shadow-lg shadow-blue-100 shadow-opacity-10 rounded-xl px-5 py-3 max-h-[35rem] max-w-[30rem]",
+              { "max-h-max h-auto max-w-[40rem]": isShown[index] }
             )}
           >
             <div className="flex justify-start gap-3 mt-2">
@@ -49,20 +49,20 @@ export default function Recommendations() {
               </a>
 
               <div className="text-left mt-2">
-                <p className="text-lg text-indigo-800 font-semibold text-slate-800">
+                <p className="text-xl text-indigo-800 font-semibold text-slate-800">
                   {rec.author}
                 </p>
                 <p className="text-sm font-normal text-slate-800">
                   {rec.title}
                 </p>
-                <p className="text-xs font-normal text-slate-600">
+                <p className="text-sm font-normal text-slate-600">
                   {rec.relation}
                 </p>
               </div>
             </div>
 
-            <p className="mt-4 text-sm text-start text-slate-800">
-              <FaQuoteLeft className="inline text-xl text-indigo-900 mr-2 mb-2" />
+            <p className="mt-4 text-md text-start text-slate-800">
+              {/* <FaQuoteLeft className="inline text-indigo-900 mr-2 mb-1" /> */}
               {rec.paragraphs[0]}
             </p>
             {isShown[index] &&
@@ -70,7 +70,7 @@ export default function Recommendations() {
                 <>
                   <p
                     key={idx}
-                    className="mt-1 text-start text-sm text-slate-800"
+                    className="mt-1 text-start text-md text-slate-800"
                   >
                     {paragraph}
                   </p>
@@ -86,7 +86,9 @@ export default function Recommendations() {
                   setIsShown((prev) => prev.map((_, i) => i === index))
                 }
               >
-                Read more...
+                <p className="mt-4 text-sm text-start text-slate-800">
+                  Read more...
+                </p>
               </div>
             )}
           </div>

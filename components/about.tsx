@@ -11,7 +11,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="max-w-[45rem] text-center 
+      className="max-w-[55rem] text-center text-md
         leading-8 text-slate-800 scroll-mt-[18rem]"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
@@ -19,17 +19,17 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
 
-      <p className="mb-3 text-justify">
+      <p className="mb-3 text-left">
         I graduated with a B.S./M.S. in{" "}
-        <span className="font-medium">Computer Science 💻</span> specializing in
+        <span className="text-indigo-900 font-medium  text-opacity-80">Computer Science 💻</span> specializing in
         Machine Learning from{" "}
-        <span className="font-medium">Georgia Tech 🐝</span> in{" "}
-        <span className="font-medium">December 2021</span>. With a return offer
+        <span className="text-indigo-900 font-medium  text-opacity-80">Georgia Tech 🐝</span> in{" "}
+        <span className="text-indigo-900 font-medium  text-opacity-80">December 2021</span>. With a return offer
         from my 2020 internship in hand, I joined an exciting
         sustainable-trucking startup called{" "}
-        <span className="font-medium">Convoy Inc</span> full-time in Jan 2022. I
+        <span className="text-indigo-900 font-medium  text-opacity-80">Convoy Inc</span> full-time in Jan 2022. I
         was entrusted with the delivery of several high-value,{" "}
-        <span className="font-medium">🥞 full-stack</span> features from the
+        <span className="text-indigo-900 font-medium  text-opacity-80">🥞 full-stack</span> features from the
         get-go and I built significant, and impactful product features for 2
         years before my team was cut in{" "}
         <a
@@ -43,12 +43,12 @@ export default function About() {
       </p>
 
       <p className="mb-3 text-justify">
-        I am <span className="font-medium">passionate and driven</span> about
+        I am <span className="text-indigo-900 font-medium  text-opacity-80">passionate and driven</span> about
         building amazing tech products.{" "}
-        <span className="italic font-medium">I love continuous learning</span>{" "}
-        and <span className="font-medium">solving challenging problems 🧩</span>
+        <span className="italic text-indigo-900 font-medium  text-opacity-80">I love continuous learning</span>{" "}
+        and <span className="text-indigo-900 font-medium  text-opacity-80">solving challenging problems 🧩</span>
         . I am a{" "}
-        <span className="font-medium">motivated, versatile and creative</span>{" "}
+        <span className="text-indigo-900 font-medium  text-opacity-80">motivated, versatile and creative</span>{" "}
         software engineer, and I am looking for a challenging opportunity at a
         company where I can continue to deliver outstanding results while honing
         my skills.
@@ -57,9 +57,9 @@ export default function About() {
       <p className="mb-3 text-justify">
         When I'm not coding, I enjoy graphic design, music, and hiking with my
         dog 🐶 outdoors. I am also dedicated to furthering{" "}
-        <span className="font-medium">sustainability 💚</span> and making
+        <span className="text-indigo-900 font-medium  text-opacity-80">sustainability 💚</span> and making
         conscious choices that{" "}
-        <span className="font-medium">benefit our planet 🌎</span>. I love to
+        <span className="text-indigo-900 font-medium  text-opacity-80">benefit our planet 🌎</span>. I love to
         learn and add on more hobbies to my list: Bharatanatyam (Indian
         classical dance), Carnatic music, Digital Art, Sewing, Crocheting, and
         Painting.

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Analytics } from '@vercel/analytics/react';
+import { Red_Hat_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 
-const inter = Inter({ subsets: ["latin"] });
+export const inter = Red_Hat_Display({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Neha Deshpande | Personal Portfolio",
@@ -25,6 +26,7 @@ export default function RootLayout({
           <Header />
           {children}
         </ActiveSectionContextProvider>
+        <Analytics />
       </body>
     </html>
   );
