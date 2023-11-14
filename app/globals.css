@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 .line-1 {
-  width: 8em;
+  width: 7.5em;
+  max-width: 7.5em;
   margin: 0 auto;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   font-size: "8wv";
   text-align: flex-start;
+  flex-basis: content;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -24,7 +26,7 @@
     width: 0;
   }
   to {
-    width: 8em;
+    width: 7.5em;
   }
 }
 
@@ -40,3 +42,38 @@
 html {
   --line-color: #312e81;
 }
+
+
+.writer {
+  display: inline-block;
+  text-align: flex-start;
+  justify-content: flex-start;
+  }
+  .writer-text {
+      display: inline-block;
+      overflow: hidden;
+      animation: typing 5s steps(30, end), blink .75s step-end infinite;
+      white-space: nowrap;
+      font-size: 30px;
+      font-weight: 700;
+      border-right: 4px solid #93c5fd;
+      box-sizing: border-box;
+  }
+
+  @keyframes typing {
+      from { 
+          width: 0% 
+      }
+      to { 
+          width: 100% 
+      }
+  }
+
+  @keyframes blink {
+      from, to { 
+          border-color: transparent 
+      }
+      50% { 
+          border-color: #93c5fd; 
+      }
+  }

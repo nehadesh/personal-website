@@ -17,7 +17,7 @@ export default function Experience() {
     <motion.section
       id="experience"
       ref={ref}
-      className="scroll-mt-[18rem] text-slate-800 text-center max-w-[53rem] justify-center mb-28"
+      className="scroll-mt-[18rem] text-slate-800 text-center max-w-[80rem] justify-center mb-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
     >
@@ -50,6 +50,9 @@ export default function Experience() {
           </React.Fragment>
         ))}
       </VerticalTimeline>
+      <div className="mt-8 text-3xl text-indigo-900 hover:bounce">
+        Your company could be next!
+      </div>
     </motion.section>
   );
 }

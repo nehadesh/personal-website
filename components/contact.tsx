@@ -2,9 +2,10 @@
 import { useSectionInView } from "@/lib/hooks";
 import React from "react";
 import SectionHeading from "./section-heading";
-import { FaPaperPlane } from "react-icons/fa";
+import { FaEnvelopeSquare, FaPaperPlane, FaRegCopy } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmail";
+import Link from "next/link";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -13,7 +14,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="mb-60 sm:mb-80 w-[min(100%,38rem)] text-center justify-center scroll-mt-[18rem]"
+      className="mb-60 sm:mb-80 w-[min(100%,38rem)] flex flex-col text-center justify-center align-center scroll-mt-[18rem]"
       initial={{ opacity: 0 }}
       whileInView={{
         opacity: 1,
@@ -32,6 +33,22 @@ export default function Contact() {
         .
       </p>
       <p className="text-slate-700">I look forward to hearing from you!</p>
+      <button
+          onClick={() => navigator.clipboard.writeText("neha.n.deshpande@gmail.com")}
+          className="group bg-slate-700 bg-opacity-80 
+          text-slate-100 px-7 py-3 mt-8 flex max-w-[15rem]
+          items-center gap-2 rounded-full text-center self-center
+          justify-center shadow-xl shadow-blue-100 shadow-opacity-10 outline-none
+          focus:scale-110 hover:scale-110 hover:bg-slate-800
+          hover:bg-opacity-80 active:scale-105 transition"
+        >
+          Copy email{" "}
+          <FaRegCopy
+            className="group text-[1.35rem] 
+          opacity-80 group-hover:animate-bounce transition"
+          />{" "}
+        </button>
+
 
       {/* <form
         className="mt-10 flex flex-col text-slate-800"

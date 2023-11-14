@@ -9,7 +9,7 @@ export default function Skills() {
   const { ref } = useSectionInView("Skills");
   return (
     <motion.section
-      className="max-w-[53rem] text-slate-800 
+      className="max-w-[55rem] text-slate-800 
     scroll-mt-[21rem] text-center"
       id="skills"
       ref={ref}
@@ -23,8 +23,8 @@ export default function Skills() {
       >
         {skillsData.map((skill, index) => (
           <li
-            className="bg-white bg-opacity-80 border shadow-sm shadow-slate-500 
-            rounded-xl px-5 py-3 hover:scale-110 transition"
+            className="bg-white bg-opacity-80 border shadow-sm shadow-blue-100 
+            shadow-opacity-10 rounded-xl px-5 py-3 hover:scale-110 transition"
             key={index}
           >
             {skill}
